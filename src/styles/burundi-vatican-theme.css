@@ -1,0 +1,150 @@
+/* Thème combiné Burundi + Vatican */
+
+/* Dégradés combinés */
+.gradient-burundi-vatican {
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+.gradient-burundi-vatican-text {
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Bordures combinées */
+.border-burundi-vatican {
+  border-image: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border-top-burundi-vatican {
+  border-top: 3px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+}
+
+.border-left-burundi-vatican {
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+}
+
+/* Badges combinés */
+.badge-burundi-vatican {
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.badge-gold {
+  background: linear-gradient(135deg, #FFD700 0%, #FCDD09 100%);
+  color: #212529;
+}
+
+.badge-green {
+  background: linear-gradient(135deg, #00A859 0%, #008A4A 100%);
+  color: #FFFFFF;
+}
+
+.badge-red {
+  background: linear-gradient(135deg, #CE1126 0%, #B00E20 100%);
+  color: #FFFFFF;
+}
+
+/* Cards avec accents combinés */
+.card-burundi-vatican {
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.card-burundi-vatican::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+/* Boutons combinés */
+.btn-burundi-vatican {
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.btn-burundi-vatican:hover {
+  background: linear-gradient(135deg, #FCDD09 0%, #008A4A 50%, #B00E20 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Inputs avec focus combiné */
+.input-burundi-vatican:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.15),
+              0 0 0 0.25rem rgba(0, 168, 89, 0.15),
+              0 0 0 0.25rem rgba(206, 17, 38, 0.15);
+}
+
+/* Tableaux avec accents combinés */
+.table-burundi-vatican thead {
+  background: linear-gradient(135deg, #FFF9E6 0%, #F0F9F4 50%, #FFE5E5 100%);
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+}
+
+/* Navigation avec accents combinés */
+.nav-burundi-vatican .nav-link.active {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.15) 0%, rgba(0, 168, 89, 0.1) 50%, rgba(206, 17, 38, 0.1) 100%);
+  color: #2C3E50;
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+}
+
+/* Animations combinées */
+@keyframes shimmer-burundi-vatican {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-burundi-vatican {
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%, #00A859 100%, #FFD700 100%);
+  background-size: 1000px 100%;
+  animation: shimmer-burundi-vatican 3s infinite;
+}
+
+/* Stats cards combinées */
+.stat-card-burundi-vatican {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9E6 50%, #F0F9F4 100%);
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card-burundi-vatican::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+

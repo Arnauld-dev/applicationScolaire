@@ -1,0 +1,104 @@
+/* Thème Vatican - Couleurs et styles supplémentaires */
+
+/* Accents dorés */
+.text-vatican-gold {
+  color: #FFD700 !important;
+}
+
+.bg-vatican-gold {
+  background-color: #FFD700 !important;
+}
+
+.bg-vatican-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #FCDD09 100%) !important;
+}
+
+/* Bordures dorées */
+.border-vatican {
+  border-color: #FFD700 !important;
+}
+
+.border-top-vatican {
+  border-top: 3px solid #FFD700 !important;
+}
+
+/* Ombres dorées */
+.shadow-vatican {
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Effets de survol avec or */
+.hover-gold:hover {
+  background-color: rgba(255, 215, 0, 0.1) !important;
+  border-color: #FFD700 !important;
+}
+
+/* Badges avec thème Vatican */
+.badge-vatican {
+  background: linear-gradient(135deg, #FFD700 0%, #FCDD09 100%);
+  color: #212529;
+  font-weight: 600;
+}
+
+/* Boutons avec thème Vatican */
+.btn-vatican {
+  background: linear-gradient(135deg, #FFD700 0%, #FCDD09 100%);
+  border: none;
+  color: #212529;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.btn-vatican:hover {
+  background: linear-gradient(135deg, #FCDD09 0%, #FFD700 100%);
+  color: #212529;
+  box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Cards avec thème Vatican */
+.card-vatican {
+  border-top: 4px solid #FFD700;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9E6 100%);
+}
+
+/* Inputs avec focus doré */
+.input-vatican:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+/* Tableaux avec accents dorés */
+.table-vatican thead {
+  background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 100%);
+  border-bottom: 2px solid #FFD700;
+}
+
+.table-vatican thead th {
+  color: #FCDD09;
+  font-weight: 600;
+}
+
+/* Navigation avec thème Vatican */
+.nav-vatican .nav-link.active {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%);
+  color: #FCDD09;
+  border-left: 3px solid #FFD700;
+}
+
+/* Animations dorées */
+@keyframes shimmer-gold {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, #FFD700 0%, #FFF9E6 50%, #FFD700 100%);
+  background-size: 1000px 100%;
+  animation: shimmer-gold 3s infinite;
+}
+

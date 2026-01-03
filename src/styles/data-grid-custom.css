@@ -1,0 +1,116 @@
+/* Styles personnalisés pour react-data-grid */
+
+.rdg {
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.rdg.fill-grid {
+  height: 100%;
+  width: 100%;
+}
+
+.rdg-light {
+  --rdg-background-color: var(--card-bg);
+  --rdg-header-background-color: var(--table-header-bg);
+  --rdg-row-hover-background-color: rgba(255, 215, 0, 0.05);
+  --rdg-row-selected-background-color: rgba(255, 215, 0, 0.1);
+  --rdg-border-color: var(--border-color);
+  --rdg-summary-border-color: var(--border-color);
+  --rdg-color: var(--text-primary);
+  --rdg-font-size: 0.875rem;
+}
+
+.rdg-cell {
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.rdg-cell[aria-selected="true"] {
+  outline: 2px solid #FFD700;
+  outline-offset: -2px;
+}
+
+.rdg-header-row {
+  background: linear-gradient(135deg, #FFF9E6 0%, #F0F9F4 50%, #FFE5E5 100%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: #495057;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+}
+
+.rdg-header-cell {
+  border-right: 1px solid var(--border-color);
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rdg-row {
+  background-color: var(--card-bg);
+  transition: background-color 0.2s;
+}
+
+.rdg-row:hover {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.05) 0%, rgba(0, 168, 89, 0.05) 50%, rgba(206, 17, 38, 0.05) 100%);
+}
+
+.rdg-row[aria-selected="true"] {
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.rdg-cell-frozen {
+  background-color: var(--card-bg);
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.rdg-cell-editing {
+  padding: 0;
+}
+
+.rdg-text-editor {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFD700;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+}
+
+.rdg-text-editor:focus {
+  outline: none;
+  border-color: #00A859;
+  box-shadow: 0 0 0 3px rgba(0, 168, 89, 0.1);
+}
+
+/* Dark mode */
+.dark-mode .rdg-light {
+  --rdg-background-color: var(--card-bg);
+  --rdg-header-background-color: var(--table-header-bg);
+  --rdg-row-hover-background-color: rgba(255, 215, 0, 0.1);
+  --rdg-row-selected-background-color: rgba(255, 215, 0, 0.15);
+  --rdg-border-color: var(--border-color);
+  --rdg-color: var(--text-primary);
+}
+
+.dark-mode .rdg-header-row {
+  background: var(--table-header-bg);
+  color: var(--text-primary);
+}
+
+.dark-mode .rdg-text-editor {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border-color: #FFD700;
+}
+

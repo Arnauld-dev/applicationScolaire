@@ -1,0 +1,387 @@
+/* Personnalisation Bootstrap pour le Petit Séminaire de Mugera */
+
+/* Couleurs principales - Mélange Burundi + Vatican */
+:root {
+  --bs-primary: #FFD700; /* Or du Vatican */
+  --bs-primary-rgb: 255, 215, 0;
+  --bs-primary-dark: #FCDD09; /* Or foncé */
+  --bs-primary-light: #FFE55C; /* Or clair */
+  --bs-secondary: #6c757d;
+  --bs-success: #00A859; /* Vert du Burundi */
+  --bs-danger: #CE1126; /* Rouge du Burundi */
+  --bs-warning: #FFD700; /* Or du Vatican */
+  --bs-info: #00A859; /* Vert du Burundi */
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-vatican-gold: #FFD700;
+  --bs-burundi-red: #CE1126;
+  --bs-burundi-green: #00A859;
+  --bs-burundi-white: #FFFFFF;
+}
+
+/* Boutons personnalisés - Mélange Burundi + Vatican */
+.btn-primary {
+  background: linear-gradient(135deg, #FFD700 0%, #FCDD09 100%);
+  border: none;
+  color: #212529;
+  font-weight: 600;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #FCDD09 0%, #FFD700 100%);
+  color: #212529;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.25);
+}
+
+/* Bouton success avec vert Burundi */
+.btn-success {
+  background: linear-gradient(135deg, #00A859 0%, #008A4A 100%);
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #008A4A 0%, #00A859 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(0, 168, 89, 0.35);
+}
+
+/* Bouton danger avec rouge Burundi */
+.btn-danger {
+  background: linear-gradient(135deg, #CE1126 0%, #B00E20 100%);
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #B00E20 0%, #CE1126 100%);
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(206, 17, 38, 0.35);
+}
+
+/* Cards avec ombre douce */
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tableaux - Mélange Burundi + Vatican */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.table thead th {
+  background: linear-gradient(135deg, #FFF9E6 0%, #F0F9F4 50%, #FFE5E5 100%);
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: #495057;
+  padding: 1rem;
+  position: relative;
+}
+
+.table thead th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+.table tbody tr {
+  transition: all 0.2s;
+}
+
+.table tbody tr:hover {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.05) 0%, rgba(0, 168, 89, 0.05) 50%, rgba(206, 17, 38, 0.05) 100%);
+  transform: scale(1.01);
+}
+
+/* Formulaires */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--bs-dark);
+}
+
+.form-control,
+.form-select {
+  border-radius: 0.375rem;
+  border: 1px solid #ced4da;
+  transition: all 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+/* Navbar - Mélange Burundi + Vatican */
+.navbar {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9E6 30%, #F0F9F4 70%, #FFFFFF 100%);
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  padding: 1rem 0;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Sidebar - Mélange Burundi + Vatican */
+.sidebar {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F9FA 50%, #F0F9F4 100%);
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.06);
+  border-right: 3px solid;
+  border-image: linear-gradient(180deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  position: relative;
+}
+
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+.sidebar .nav-link {
+  color: #495057;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.75rem;
+  margin: 0.25rem 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.sidebar .nav-link:hover {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 0%, rgba(0, 168, 89, 0.1) 100%);
+  color: #2C3E50;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.1);
+}
+
+.sidebar .nav-link.active {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.15) 0%, rgba(0, 168, 89, 0.1) 50%, rgba(206, 17, 38, 0.1) 100%);
+  color: #2C3E50;
+  font-weight: 600;
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+}
+
+/* Footer - Mélange Burundi + Vatican */
+footer {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9E6 30%, #F0F9F4 70%, #FFFFFF 100%);
+  border-top: 3px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  padding: 2rem 0;
+  margin-top: auto;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+/* Badges */
+.badge {
+  padding: 0.35em 0.65em;
+  font-weight: 500;
+  border-radius: 0.375rem;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* Modals - Mélange Burundi + Vatican */
+.modal-content {
+  border-radius: 1.25rem;
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  z-index: 1;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9E6 50%, #F0F9F4 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1.25rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 1.25rem;
+}
+
+/* Pagination - Mélange Burundi + Vatican */
+.pagination .page-link {
+  color: #495057;
+  border-color: #dee2e6;
+  transition: all 0.3s;
+}
+
+.pagination .page-item.active .page-link {
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  border-color: transparent;
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.pagination .page-link:hover {
+  color: #2C3E50;
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 0%, rgba(0, 168, 89, 0.1) 50%, rgba(206, 17, 38, 0.1) 100%);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Loaders */
+.spinner-border {
+  color: var(--bs-primary);
+}
+
+/* Cards avec accents Burundi + Vatican */
+.card-header {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF9E6 50%, #F0F9F4 100%);
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%) 1;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.card-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+}
+
+.card-title {
+  background: linear-gradient(135deg, #FFD700 0%, #00A859 50%, #CE1126 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1040;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
+
